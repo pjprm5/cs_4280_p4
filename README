@@ -1,0 +1,29 @@
+Paul Passiglia
+cs_4280
+P3 Parser
+
+Local Option chosen.
+
+Known issues:
+<jump> keyword nodes will throw parse error.
+Some nested logic with multiple <start> <stop> blocks may throw parse error.
+With multiple different declared variables before <program>, it may throw semantics error when checking scope
+validity after checking the first declared variable. It does fine with one declared variable before <program>.
+
+To run program type:
+
+make
+
+then type:
+
+./statSem filename.fs
+
+To clean .o files type:
+ 
+make clean
+
+To clean the .exe file type:
+
+make outclean
+
+Filename must have a .fs extension to be parsed.
